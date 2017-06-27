@@ -1,3 +1,21 @@
+<?php include_once "php/profile.php"; 
+$profile = new Profile();
+$profile->imgProfile="img/me.jpg";
+$profile->name = "Yeray Ruiz Juárez";
+$profile->birthday = "October 6th, 1997";
+$profile->phone = "+34 620 94 10 70";
+$profile->email = "yeray.1997.yr@gmail.com";
+$profile->web = "ncatz.com";
+$profile->github = "https://github.com/yeray697/";
+$profile->linkedin = "https://www.linkedin.com/in/yeray-ruiz-ju%C3%A1rez-b7384a11a";
+//TODO
+$profile->skills; //Array
+$profile->tools; //Array
+$profile->projects; //Array
+$profile->language; //Array
+$profile->interests; //Array
+$profile->timeline; //Array
+?>
 <html>  
     <head>
         <meta charset="UTF-8">
@@ -12,7 +30,8 @@
         <div class="main">
             <div class="row">
                 <div class="col s12 m3 left-container center">
-                    <div class="margin5 center-item">    
+                    <?php $profile->printInfo();?>
+                    <!-- <div class="margin5 center-item">    
                         <div class="clickable img-circle">
                             <img src="img/me.jpg" alt="Yo" class="">
                         </div>
@@ -32,6 +51,7 @@
                             <a href="https://www.linkedin.com/in/yeray-ruiz-ju%C3%A1rez-b7384a11a/"><img src="img/linkedin-128.png" alt="linkedin" class="img-contact highlight"></img></a>
                         </div>
                     </div>
+                    -->
                 </div>
                 <div class="col s12 m9 right-container border-dotted-left">
                     <div class="row">
@@ -154,28 +174,6 @@
 
                                 <div class="col s12 border-dotted-bottom">
                                     <div class="section-title">Tools</div>
-                                    <!-- <div class="row">
-                                        <div class="col s12 m6 xl3">
-                                            <img class="tools-img" src="img/android-studio.svg" alt="Android studio">
-                                        </div>
-
-                                        <div class="col s12 m6 xl3">
-                                            <img class="tools-img" src="img/android-studio.svg" alt="Android studio">
-                                        </div>
-
-                                        <div class="col s12 m6 xl3">
-                                            <img class="tools-img" src="img/android-studio.svg" alt="Android studio">
-                                        </div>
-
-                                        <div class="col s12 m6 xl3">
-                                            <img class="tools-img" src="img/android-studio.svg" alt="Android studio">
-                                        </div>
-
-                                        <div class="col s12 m6 xl3">
-                                            <img class="tools-img" src="img/android-studio.svg" alt="Android studio">
-                                        </div>
-                                    </div> -->
-
                                     <span class="tools-item">
                                         <div><img class="tools-img" src="img/visual-studio.svg" alt="Visual studio"><span class="tools-img-caption">Visual Studio</span></div>
                                         
