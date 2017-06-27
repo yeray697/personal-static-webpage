@@ -8,13 +8,12 @@ class Profile {
     public $web;
     public $github;
     public $linkedin;
-    //TODO
     public $skills; //Array
     public $tools; //Array
+    public $timeline; //Array
+    //TODO
     public $projects; //Array
     public $language; //Array
-    public $interests; //Array
-    public $timeline; //Array
 
     function printName() {
         if(isset($this->name))
@@ -77,5 +76,30 @@ class Profile {
         self::printName();
         self::printAdditionalInfo();
     }
+
+    function printSkills() {
+        if (isset($this->skills)){
+            foreach ($this->skills as $skill) {
+                $skill->printSkill();
+            }
+        }
+    }
+
+    function printTools() {
+        if (isset($this->tools)){
+            foreach ($this->tools as $tool) {
+                $tool->printTool();
+            }
+        }
+    }
+
+    function printTimeline() {
+        if (isset($this->timeline)){
+            foreach ($this->timeline as $item) {
+                $item->printTimeLineItem();
+            }
+        }
+    }
+    
 }
 ?>
