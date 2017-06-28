@@ -1,4 +1,9 @@
 <?php
+include_once "skills.php";
+include_once "tools.php";
+include_once "timeline.php";
+include_once "project.php";
+
 class Profile {
     public $imgProfile;
     public $name;
@@ -97,6 +102,14 @@ class Profile {
         if (isset($this->timeline)){
             foreach ($this->timeline as $item) {
                 $item->printTimeLineItem();
+            }
+        }
+    }
+
+    function printProjects() {
+        if (isset($this->projects)){
+            foreach ($this->projects as $item) {
+                $item->printProject();
             }
         }
     }

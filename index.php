@@ -1,8 +1,5 @@
 <?php
 include_once "php/profile.php";
-include_once "php/skills.php";
-include_once "php/tools.php";
-include_once "php/timeline.php";
 
 $profile = new Profile();
 $profile->imgProfile="img/me.jpg";
@@ -13,20 +10,22 @@ $profile->email = "yeray.1997.yr@gmail.com";
 $profile->web = "ncatz.com";
 $profile->github = "https://github.com/yeray697/";
 $profile->linkedin = "https://www.linkedin.com/in/yeray-ruiz-ju%C3%A1rez-b7384a11a";
-//TODO
 $profile->skills = array('0' => new Skill("Máquina","100"),
 '1' => new Skill("Fiera","95"),
 '2' => new Skill("Crack","97"),
 '3' => new Skill("Mastodonte","98"),
 '4' => new Skill("Astronauta","99"),
 '4' => new Skill("Feka","0"));
-
 $profile->tools = array('0' => new Tool("Visual Studio","img/visual-studio.svg"),
 '1' => new Tool("Android Studio","img/android-studio.svg"),
 '2' => new Tool("Unity","img/unity.svg"),
 '3' => new Tool("Eclipse","img/eclipse.svg"),
 '4' => new Tool("Photoshop","img/photoshop.svg"));
-$profile->projects; //Array
+$profile->projects = array('0' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
+'1' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
+'2' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
+'3' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
+'4' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""));
 $profile->language; //Array
 
 $description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.";
@@ -72,6 +71,7 @@ $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$de
 
                                 <div class="col s12 border-dotted-bottom">
                                     <div class="section-title">Projects</div>
+                                    <?php $profile->printProjects(); ?>
                                 </div>
 
                                 <div class="col s12 border-dotted-bottom">

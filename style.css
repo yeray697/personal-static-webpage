@@ -210,6 +210,74 @@ body {
     color: #fff!important;
     background-color: #333333!important;
 }
+/* --------------------------------
+
+        PROJECTS
+
+-------------------------------- */
+.highlight-grey:hover{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+.highlight-grey{
+    filter: none;
+    transition: all 1s ease;
+}
+.project-item-color-1 {
+	background-color:#444444;
+	color:#ffffff;
+}
+.project-item-color-2 {
+	background-color:#666666;
+	color:#ffffff;
+}
+
+.project-item {
+	width:100%;
+	float:left;
+	text-align:center;
+	letter-spacing:3px;
+	padding:55px 0px 25px 0px;
+	height:200px;
+	font-family: 'Raleway', sans-serif;
+	font-size:13px;
+	font-weight:700;
+	line-height:16px;
+}
+.project-item img {
+	width:50%;
+	max-width:210px;
+	margin-bottom:10px;
+    transition: all .2s ease-in-out;
+}
+.project-item-title {
+    margin: 0px 5px 0px;
+}
+.zoom {
+	transform: scale(1.1);
+}
+.project-item-info {
+    color: #ddd;
+    margin: 0px 5px 10px;
+}
+@media screen and (min-width: 601px) {
+    .project-item {
+        width:50%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .project-item {
+        width:50%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .project-item {
+        width:33.3333%;
+    }
+}
 
 /* --------------------------------
 
