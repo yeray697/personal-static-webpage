@@ -15,10 +15,11 @@ $profile->github = "https://github.com/yeray697/";
 $profile->linkedin = "https://www.linkedin.com/in/yeray-ruiz-ju%C3%A1rez-b7384a11a";
 //TODO
 $profile->skills = array('0' => new Skill("Máquina","100"),
-'1' => new Skill("Fiera","100"),
-'2' => new Skill("Crack","100"),
-'3' => new Skill("Mastodonte","100"),
-'4' => new Skill("Astronauta","100"));
+'1' => new Skill("Fiera","95"),
+'2' => new Skill("Crack","97"),
+'3' => new Skill("Mastodonte","98"),
+'4' => new Skill("Astronauta","99"),
+'4' => new Skill("Feka","0"));
 
 $profile->tools = array('0' => new Tool("Visual Studio","img/visual-studio.svg"),
 '1' => new Tool("Android Studio","img/android-studio.svg"),
@@ -27,9 +28,8 @@ $profile->tools = array('0' => new Tool("Visual Studio","img/visual-studio.svg")
 '4' => new Tool("Photoshop","img/photoshop.svg"));
 $profile->projects; //Array
 $profile->language; //Array
-//$title, $description,$date,$btnText="",$btnLink=""
-$description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.";
 
+$description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.";
 $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$description,"Jan 14"),
 '1' => new TimeLineWorkItem("Title of section 2",$description,"Jan 15","Read more...","https://www.google.es"),
 '2' => new TimeLineStudyItem("Title of section 3",$description,"Jan 16","Read more...","https://www.google.es"),
@@ -40,11 +40,9 @@ $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$de
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-	    <script src="https://codyhouse.co/demo/vertical-timeline/js/modernizr.js"></script> <!-- Modernizr -->
     </head>
     <body>
         <div class="main">
