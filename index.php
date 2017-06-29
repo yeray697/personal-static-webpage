@@ -21,13 +21,18 @@ $profile->tools = array('0' => new Tool("Visual Studio","img/visual-studio.svg")
 '2' => new Tool("Unity","img/unity.svg"),
 '3' => new Tool("Eclipse","img/eclipse.svg"),
 '4' => new Tool("Photoshop","img/photoshop.svg"));
+$profile->softwareskills = array('0' => new SoftwareSkill("Visual Studio"),
+'1' => new SoftwareSkill("Visual Studio"),
+'2' => new SoftwareSkill("Visual Studio"),
+'3' => new SoftwareSkill("Visual Studio"),
+'4' => new SoftwareSkill("Visual Studio"));
+$profile->languages = array('0' => new Language("Spanish", "img/spanish.svg"),
+'1' => new Language("English", "img/english.svg"));
 $profile->projects = array('0' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
 '1' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
 '2' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
 '3' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
 '4' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""));
-$profile->language; //Array
-
 $description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.";
 $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$description,"Jan 14"),
 '1' => new TimeLineWorkItem("Title of section 2",$description,"Jan 15","Read more...","https://www.google.es"),
@@ -63,44 +68,26 @@ $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$de
                                     <div class="section-title">Skills</div>
                                     <?php $profile->printSkills();?>
                                 </div>
+                                <div class="col s12 border-dotted-bottom">
+                                    <div class="section-title">Software Skills</div>
+                                    <?php $profile->printSoftwareskills(); ?>
+                                </div>
+
+                                <div class="col s12 border-dotted-bottom">
+                                    <div class="section-title">Language</div>
+                                    <?php $profile->printLanguages();?>
+                                </div>
 
                                 <div class="col s12 border-dotted-bottom">
                                     <div class="section-title">Tools</div>
                                     <?php $profile->printTools();?>
                                 </div>
 
-                                <div class="col s12 border-dotted-bottom">
+                                <div class="col s12">
                                     <div class="section-title margin5">Projects</div>
                                     <div class="projects">
                                         <?php $profile->printProjects(); ?>
                                     </div>
-                                </div>
-
-                                <div class="col s12 border-dotted-bottom">
-                                    <div class="section-title">Language</div>
-                                        <ul class="w3-ul w3-card-4">
-                                        <li class="w3-padding-16">
-                                            <span onclick="this.parentElement.style.display='none'" 
-                                            class="w3-button w3-white w3-xlarge w3-right">×</span>
-                                            <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                                            <span class="w3-large">Mike</span><br>
-                                            <span>Web Designer</span>
-                                        </li>
-                                        <li class="w3-padding-16">
-                                            <span onclick="this.parentElement.style.display='none'" 
-                                            class="w3-button w3-white w3-xlarge w3-right">×</span>
-                                            <img src="https://www.w3schools.com/w3css/img_avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                                            <span class="w3-large">Jill</span><br>
-                                            <span>Support</span>
-                                        </li>  
-                                        <li class="w3-padding-16">
-                                            <span onclick="this.parentElement.style.display='none'" 
-                                            class="w3-button w3-white w3-xlarge w3-right">×</span>
-                                            <img src="https://www.w3schools.com/w3css/img_avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                                            <span class="w3-large">Jane</span><br>
-                                            <span>Accountant</span>
-                                        </li> 
-                                    </ul>
                                 </div>
                             </div>
                             

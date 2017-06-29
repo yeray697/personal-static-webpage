@@ -3,6 +3,8 @@ include_once "skills.php";
 include_once "tools.php";
 include_once "timeline.php";
 include_once "project.php";
+include_once "softwareskill.php";
+include_once "language.php";
 
 class Profile {
     public $imgProfile;
@@ -16,9 +18,9 @@ class Profile {
     public $skills; //Array
     public $tools; //Array
     public $timeline; //Array
-    //TODO
     public $projects; //Array
-    public $language; //Array
+    public $softwareskills; //Array
+    public $languages; //Array
 
     function printName() {
         if(isset($this->name))
@@ -114,5 +116,21 @@ class Profile {
         }
     }
     
+    function printSoftwareskills() {
+        if (isset($this->softwareskills)){
+            foreach ($this->softwareskills as $index=>$value) {
+                $value->printSoftwareskill(($index + 1));
+            }
+        }
+    }
+
+    
+    function printLanguages() {
+        if (isset($this->languages)){
+            foreach ($this->languages as $value) {
+                $value->printLanguage();
+            }
+        }
+    }
 }
 ?>
