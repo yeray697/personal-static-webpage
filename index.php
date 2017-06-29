@@ -70,12 +70,37 @@ $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$de
                                 </div>
 
                                 <div class="col s12 border-dotted-bottom">
-                                    <div class="section-title">Projects</div>
-                                    <?php $profile->printProjects(); ?>
+                                    <div class="section-title margin5">Projects</div>
+                                    <div class="projects">
+                                        <?php $profile->printProjects(); ?>
+                                    </div>
                                 </div>
 
                                 <div class="col s12 border-dotted-bottom">
                                     <div class="section-title">Language</div>
+                                        <ul class="w3-ul w3-card-4">
+                                        <li class="w3-padding-16">
+                                            <span onclick="this.parentElement.style.display='none'" 
+                                            class="w3-button w3-white w3-xlarge w3-right">×</span>
+                                            <img src="https://www.w3schools.com/w3css/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+                                            <span class="w3-large">Mike</span><br>
+                                            <span>Web Designer</span>
+                                        </li>
+                                        <li class="w3-padding-16">
+                                            <span onclick="this.parentElement.style.display='none'" 
+                                            class="w3-button w3-white w3-xlarge w3-right">×</span>
+                                            <img src="https://www.w3schools.com/w3css/img_avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+                                            <span class="w3-large">Jill</span><br>
+                                            <span>Support</span>
+                                        </li>  
+                                        <li class="w3-padding-16">
+                                            <span onclick="this.parentElement.style.display='none'" 
+                                            class="w3-button w3-white w3-xlarge w3-right">×</span>
+                                            <img src="https://www.w3schools.com/w3css/img_avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+                                            <span class="w3-large">Jane</span><br>
+                                            <span>Accountant</span>
+                                        </li> 
+                                    </ul>
                                 </div>
                             </div>
                             
