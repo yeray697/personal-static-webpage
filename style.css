@@ -126,6 +126,9 @@ body{
     .moreinfo {
         font-size: 25px;
     }
+    .left-container{
+        max-width: 300px;
+    }
 }
 .section-title {
     font-size: 50px;
@@ -688,7 +691,6 @@ body {
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 100%;
-  max-width: 1170px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -737,7 +739,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 2px black, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;

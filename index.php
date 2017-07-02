@@ -21,24 +21,30 @@ $profile->tools = array('0' => new Tool("Visual Studio","img/visual-studio.svg")
 '2' => new Tool("Unity","img/unity.svg"),
 '3' => new Tool("Eclipse","img/eclipse.svg"),
 '4' => new Tool("Photoshop","img/photoshop.svg"));
-$profile->softwareskills = array('0' => new SoftwareSkill("Visual Studio"),
-'1' => new SoftwareSkill("Visual Studio"),
-'2' => new SoftwareSkill("Visual Studio"),
-'3' => new SoftwareSkill("Visual Studio"),
-'4' => new SoftwareSkill("Visual Studio"));
+$profile->softwareskills = array('0' => new SoftwareSkill("Android (Java)"),
+'1' => new SoftwareSkill("Java"),
+'2' => new SoftwareSkill("C#"),
+'3' => new SoftwareSkill("PHP"),
+'4' => new SoftwareSkill("HTML y CSS"),
+'5' => new SoftwareSkill("Swift y Objective-C"),
+'6' => new SoftwareSkill("Wordpress"),
+'7' => new SoftwareSkill("SQL y NoSQL"),
+'8' => new SoftwareSkill("Git y SVN"));
 $profile->languages = array('0' => new Language("Spanish", "img/spanish.svg"),
 '1' => new Language("English", "img/english.svg"));
-$profile->projects = array('0' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
-'1' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
-'2' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
-'3' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""),
-'4' => new Project("House of Children","Web Design / Responsive Development","http://www.denisechandler.com/images/houseofchildren.png",""));
+$profile->projects = array('0' => new Project("Deafmute Helper","App Design / App Development","img/deafmutehelper.png","https://play.google.com/store/apps/details?id=com.ncatz.yeray.deafmutehelper"),
+'1' => new Project("Babyguard","App Design / App Development","img/babyguard.png","https://play.google.com/store/apps/details?id=com.ncatz.babyguard"));
 $description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.";
-$profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$description,"Jan 14"),
-'1' => new TimeLineWorkItem("Title of section 2",$description,"Jan 15","Read more...","https://www.google.es"),
-'2' => new TimeLineStudyItem("Title of section 3",$description,"Jan 16","Read more...","https://www.google.es"),
-'3' => new TimeLineWorkItem("Title of section 4",$description,"Jan 17"),
-'4' => new TimeLineStudyItem("Title of section 5",$description,"Jan 18","Read more...","https://www.google.es"));
+$profile->timeline = array('0' => new TimeLineStudyItem("F.P. Superior Desarrollo de Aplicaciones Multiplataforma",
+"Lugar: I.E.S. Portada Alta
+<br>
+Conocimientos: C#, Unity, HTML, CSS, XML, JSON, PHP, Android, Wordpress (gestión y
+creación de plantillas), administración de sistemas (Windows Server 2008),
+control de versiones, test unitarios.","2015-2017","Read official gazette...","http://www.juntadeandalucia.es/boja/2011/142/20"),
+'1' => new TimeLineWorkItem("DEKRA Testing and Certification","
+- Desarrollo de cuatro aplicaciones: dos en Android y dos en iOS (Swift y Objective-C)
+<br>
+- Despliegue de sockets en C++ entre un ordenador y un dispositivo Android conectado por ADB","Mar-Jun 2017"));
 ?>
 <html>  
     <head>
@@ -65,12 +71,12 @@ $profile->timeline = array('0' => new TimeLineStudyItem("Title of section 1",$de
                         <div class="col m12 l6 border-dotted-left-two">
                             <div class="row">
                                 <div class="col s12 border-dotted-bottom">
-                                    <div class="section-title">Skills</div>
-                                    <?php $profile->printSkills();?>
-                                </div>
-                                <div class="col s12 border-dotted-bottom">
                                     <div class="section-title">Software Skills</div>
                                     <?php $profile->printSoftwareskills(); ?>
+                                </div>
+                                <div class="col s12 border-dotted-bottom">
+                                    <div class="section-title">Skills</div>
+                                    <?php $profile->printSkills();?>
                                 </div>
 
                                 <div class="col s12 border-dotted-bottom">
